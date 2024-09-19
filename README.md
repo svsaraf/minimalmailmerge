@@ -16,8 +16,8 @@ Since this script is for use within our company, you can obtain the `credentials
 ### Step 2: Clone the repo and install the python libraries
 
 ```bash
-    git clone <repo_name>
-    cd <repo_name>
+    git clone git@github.com:svsaraf/minimalmailmerge.git
+    cd minimalmailmerge
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
