@@ -1,0 +1,6 @@
+Hi {{ recipient_name | default("Guest") }},
+
+This is a message generated using Jinja2!
+
+Best regards,
+{{ sender_name | default("Your Name") }}
