@@ -1,6 +1,8 @@
 # Gmail Draft Creator
 
-This is a simple Python script that connects to your Gmail inbox and creates a draft with the message "Hello World" using the Gmail API.
+This is a simple Python script that connects to your Gmail inbox and creates a draft message templatized with Jinja2. This script creates one draft per row in the CSV, so can create 100s of drafts at once. 
+
+I find that creating gmail drafts is better than sending emails directly, because it gives an intermediate place (the draft view) where I can customize or modify drafts before they are sent. 
 
 ## Prerequisites
 
