@@ -15,6 +15,8 @@ I find that creating gmail drafts is better than sending emails directly, becaus
 
 Since this script is for use within our company, you can obtain the `credentials.json` file directly from Sanjay. This file contains the necessary credentials to access the Gmail API. I will wormhole it to you.
 
+For folks not part of the Partly team, you'd do this following instructions here: https://dev.to/yeisoncruz16/how-to-get-gmail-api-token-4ngn
+
 ### Step 2: Clone the repo and install the python libraries
 
 ```bash
