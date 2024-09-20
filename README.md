@@ -25,14 +25,20 @@ Since this script is for use within our company, you can obtain the `credentials
 
 ### Step 3: Copy credentials.json into the project folder
 
-### Step 4: Run the script
+### Step 4: Update template.txt
+
+template.txt contains the email draft you'd like to send. Surround variables with {{ double_brackets }}. Since it's a Jinja template you can also use if statements, loops, etc.
+
+### Step 5: Update template_vars.csv
+
+For each row in the csv, one email will be drafted. The mandatory columns in template_vars.csv include recipient_name,recipient_email,subject. The other variables are optional and you can add more. 
+
+### Step 6: Run the script
 
 ```
     python gmail_draft.py
 ```
 
-A browser window will open, prompting you to log in to your Google account and authorize the application. Once authorized, the script will create a draft in your Gmail account.
+A browser window will open, prompting you to log in to your Google account and authorize the application. Once authorized, a token.json file will appear in the folder. 
 
----
-
-Next thing to add is the capability of creating a CSV and then auto writing drafts. 
+The script will then create drafts in your Gmail account, one draft per row in the CSV.
