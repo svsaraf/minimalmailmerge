@@ -31,9 +31,21 @@ Since this script is for use within our company, you can obtain the `credentials
 
 template.txt contains the email draft you'd like to send. Surround variables with {{ double_brackets }}. Since it's a Jinja template you can also use if statements, loops, etc.
 
+Here's an example:
+```
+Hi {{ recipient_name | default("Guest") }},
+
+This is a message generated using Jinja2!
+
+Best regards,
+{{ sender_name | default("Your Name") }}
+```
+
 ### Step 5: Update template_vars.csv
 
 For each row in the csv, one email will be drafted. The mandatory columns in template_vars.csv include recipient_name,recipient_email,subject. The other variables are optional and you can add more. 
+
+I've included an example template_vars file, so if you want to just test this script, rename template_vars_example.csv to template_vars.csv.
 
 ### Step 6: Run the script
 
