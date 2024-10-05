@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <div style="margin: 0;">
+        <p style="margin: 0;">Hi {{ recipient_name | default("friend!") }},</p>
+        <br>
+        <br>
+        <p style="margin: 0;">Been a while since Palantir!</p>
+<p style="margin: 0;"></p>
+        <p style="margin: 0;">I'm reaching out because I just started a company, called <strong>Partly</strong>, which helps with connecting early stage companies and ex-Palantir & ex-Benchling folks who want to work on contract / part-time.</p>
+<p style="margin: 0;"></p>
+        <p style="margin: 0;">Companies seem to use this mostly in two ways:</p>
+<p style="margin: 0;"></p>
+        <ol style="margin: 0; padding-left: 20px;">
+            <li style="margin: 0;">To run a work sample trial on a person before making a full-time offer</li>
+            <li style="margin: 0;">For roles they want to spin up and spin down relatively easily (sourcing, event marketing, fractional CFO etc).</li>
+        </ol>
+<p style="margin: 0;"></p>
+        <p style="margin: 0;">Any chance that'd be a fit for you? Even if not, I'd love to get any advice you have from building at {{ company | default("your current company") }}. We've just raised about $600K for the business and are closing out a preseed round, so this thing is real...ish. :)</p>
+<p style="margin: 0;"></p>
+        <p style="margin: 0;">Best,<br>{{ sender_name | default("Your Name") }}</p>
+    </div>
+</body>
+</html>

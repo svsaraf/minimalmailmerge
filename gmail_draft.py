@@ -22,7 +22,7 @@ def read_template_vars(csv_path):
 
 def create_draft(service, message_body, recipient_email, subject):
     # Create a draft message
-    message = MIMEText(message_body)
+    message = MIMEText(message_body, 'html')
     message['to'] = recipient_email
     message['subject'] = subject
     raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
@@ -57,7 +57,7 @@ def main():
     service = build('gmail', 'v1', credentials=creds)
 
     # Read template and template variables
-    template_string = read_template('template.txt')
+    template_string = read_template('template.html')
     template_vars_list = read_template_vars('template_vars.csv')
 
     # Create a Jinja2 template

@@ -1,6 +1,13 @@
-Hi {{ recipient_name | default("Guest") }},
+Hi {{ recipient_name | default("friend!") }},
 
-This is a message generated using Jinja2!
+Been a while since Palantir!
 
-Best regards,
+I'm reaching out because I just started a company, called Partly, which helps with connecting early stage companies and ex-Palantir & ex-Benchling folks who want to work on contract / part-time. 
+
+Companies seem to use this mostly in two ways: 1) to run a work sample trial on a person before making a full time offer
+2) for roles they want to spin up and spin down relatively easily (sourcing, event marketing, fractional CFO etc).
+
+Any chance that'd be a fit for you? Even if not, I'd love to get any advice you have from building at {{ company | default("your current company")}}. We've just raised about 600K for the business and are closing out a preseed round, so this thing is real...ish. :)
+
+Best,
 {{ sender_name | default("Your Name") }}
