@@ -57,15 +57,17 @@ def main():
     service = build('gmail', 'v1', credentials=creds)
 
     # Read template and template variables
-    template_string = read_template('template.html')
+    #template_string = read_template('template.html')
     template_vars_list = read_template_vars('template_vars.csv')
 
     # Create a Jinja2 template
-    template = Template(template_string)
+    #template = Template(template_string)
 
     # Loop through each row in the CSV and create a draft
     for template_vars in template_vars_list:
         print(template_vars)
+        template_string = read_template(template_vars['template'])
+        template=Template(template_string)
         message_body = template.render(template_vars)
         create_draft(service, message_body, template_vars['recipient_email'], template_vars['subject'])
 
