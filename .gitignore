@@ -1,3 +1,4 @@
+*.numbers
 venv/
 credentials.json
 token.json
